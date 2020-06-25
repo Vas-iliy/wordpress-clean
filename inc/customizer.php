@@ -31,6 +31,24 @@ function clean_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	//new Custom
+	$wp_customize->add_section('theme_options', array(
+		'title' => __('Theme options', 'clean'),
+		'priority' => 10,
+	));
+	$wp_customize->add_setting('home_category', array(
+		'default' => '',
+	));
+	$wp_customize->add_control(
+		'home_category',
+		array(
+			'label' => __('Category on Home Page', 'clean'),
+			'section' => 'theme_options',
+			'setting' => 'text'
+		)
+	);
+
 }
 add_action( 'customize_register', 'clean_customize_register' );
 

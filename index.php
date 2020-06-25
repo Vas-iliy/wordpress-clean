@@ -3,10 +3,11 @@
 get_header();
 ?>
 
+<? if (is_front_page() && get_theme_mod('home_category')): ?>
     <div id="fh5co-portfolio">
 
         <? $query = new WP_Query(array(
-            'category_name' => 'home',
+            'category_name' => get_theme_mod('home_category'),
 
         ))?>
 
@@ -30,6 +31,7 @@ get_header();
         <? wp_reset_postdata(); ?>
     </div>
 
+<?endif;?>
 
 <?php
 get_footer();
