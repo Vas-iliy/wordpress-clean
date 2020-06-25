@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<? if (is_front_page() && get_theme_mod('home_category')): ?>
+<? if ( get_theme_mod('home_category')): ?>
 
 <div id="fh5co-portfolio">
 
