@@ -8262,3 +8262,15 @@ a > img.fh5co-align-center {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* custom */
+#fh5co-team .fw-row > div {
+  opacity: 0;
+}
+
+#fh5co-team h2 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 1em;
+  font-family: "Roboto Slab", arial, sans-serif;
+}

@@ -23,5 +23,16 @@ $options = array(
 		'label' => __('Background Video', 'fw'),
 		'desc'  => __('Insert Video URL to embed this video', 'fw'),
 		'type'  => 'text',
-	)
+	),
+
+	//custom
+	'custom_id' => array(
+		'label' => __('Custom id', 'clean'),
+		'type'  => 'text',
+	),
+	'custom_class' => array(
+		'label' => __('Custom class', 'clean'),
+		'type'  => 'text',
+	),
+
 );
