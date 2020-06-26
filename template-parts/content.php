@@ -6,7 +6,5 @@
 ?>
 <img src="<?=$img_url?>" alt="">
     <div class="fh5co-portfolio-description">
-        <h2><? the_title(); ?></h2>
-        STANDARD
         <p><? the_content(); ?></p>
     </div>
