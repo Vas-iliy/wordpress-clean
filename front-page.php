@@ -14,20 +14,9 @@ get_header();
 	))?>
 
 	<?if($query->have_posts()): $i =1; while ($query->have_posts()): $query->the_post();?>
-		<? if (has_post_thumbnail()){
-			$img_url = get_the_post_thumbnail_url();
-		} else {
-			$img_url = 'https://picsum.photos/1280/864';
-		}?>
 
-		<div class="fh5co-portfolio-item <? if ($i % 2 == 0) echo 'fh5co-img-right' ?>">
-			<div class="fh5co-portfolio-figure animate-box" style="background-image: url(<?=$img_url?>);"></div>
-			<div class="fh5co-portfolio-description">
-				<h2><? the_title(); ?></h2>
-				<p><? the_excerpt(); ?></p>
-				<p><a href="<? the_permalink(); ?>" class="btn btn-primary"><?_e('Read more', 'clean');?></a></p>
-			</div>
-		</div>
+        <? get_template_part('template-parts/content', 'preview'); ?>
+
 		<? $i++; endwhile;?>
 	<?endif;?>
 	<? wp_reset_postdata(); ?>
