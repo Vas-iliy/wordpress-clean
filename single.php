@@ -19,8 +19,10 @@ get_header();
                             <? get_sidebar(); ?>
                         </div>
                         <div class="col-md-9 col-md-pull-3">
+                            <?while (have_posts()): the_post();?>
                             <? get_template_part('template-parts/content',
                             get_post_format()); ?>
+                            <?endwhile;?>
                         </div>
                     </div>
                 </div>

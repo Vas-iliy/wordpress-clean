@@ -29,7 +29,7 @@ if ( ! function_exists( 'clean_setup' ) ) :
 		 */
 		load_theme_textdomain( 'clean', get_template_directory() . '/languages' );
 
-		add_theme_support('post-formats', array('aside', 'gallery', 'image'));
+		add_theme_support('post-formats', array('aside', 'gallery', 'image', 'video'));
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
