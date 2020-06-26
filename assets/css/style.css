@@ -8283,3 +8283,7 @@ a > img.fh5co-align-center {
   text-decoration: none;
   color: #000;
 }
+
+#fh5co-team h3 {
+  margin: 5% auto;
+}
