@@ -8274,3 +8274,12 @@ a > img.fh5co-align-center {
   margin-bottom: 1em;
   font-family: "Roboto Slab", arial, sans-serif;
 }
+
+#fh5co-team a {
+  color: #ccc;
+}
+
+#fh5co-team a:hover {
+  text-decoration: none;
+  color: #000;
+}
